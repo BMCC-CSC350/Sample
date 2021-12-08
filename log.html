@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<form action="<?php echo $handlername ?>" method="post">
+<table border="1" >
+<tr><td colspan="2" align="center"><?php echo $inputtype ?></td></tr>
+<tr><td>USER ID:</td><td><input type="text" name="userid" value=""></td></tr>
+<tr><td>PASSWORD</td><td><input type="password" name="password" value=""></td></tr>
+<tr><td><input type="submit" value="LOGIN"></td><td></td></tr>
+</table>
+</form>
+<?php if(!$ok) echo "<p> INVALID USERID/PASSWORD"; 				// show error message 
+?>
+</body>
+</html>
