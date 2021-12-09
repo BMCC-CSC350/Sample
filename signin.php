@@ -16,7 +16,7 @@ if(isset($_REQUEST["userid"]) && isset($_REQUEST["password"]))
 	{
 		$connect->close();										// close database connection
 		$_SESSION["userid"] = $userid;							// set the userid session variable to the userid value
-		header("Location: http://localhost/SampleProject/reserve.php");	// redirect to register.php
+		header("Location: reserve.php");	// redirect to register.php
 	}
 	else
 	{

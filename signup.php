@@ -18,7 +18,7 @@ if(isset($_REQUEST["userid"]) && isset($_REQUEST["password"]))
 		$sql = "INSERT INTO sampleproject.user (UserName, UserPass) VALUES ('".$userid."','".$passwd."');"; // Create query string
 		$result = mysqli_query($connect, $sql); 					// insert userid and password into user table
 		$connect->close();
-		header("Location: http://localhost/SampleProject/signin.php");	// redirect to signin.php
+		header("Location: signin.php");	// redirect to signin.php
 	}
 }
 $inputtype = "SIGN UP";
