@@ -1,6 +1,6 @@
 <?php
 $ok = true;
-/********** CHECK IF A USER IS REGISTERING **********/ 
+/********** CHECK IF A SEAT IS BEING INSERTED **********/ 
 if(isset($_REQUEST["seatno"]) && isset($_REQUEST["price"]))
 {
 	$seatno = $_REQUEST["seatno"]; $price=$_REQUEST["price"];
@@ -18,6 +18,7 @@ if(isset($_REQUEST["seatno"]) && isset($_REQUEST["price"]))
 		$sql = "INSERT INTO sampleproject.seats (Seatno, Price) VALUES ('".$seatno."','".$price."');"; // Create query string
 		$result = mysqli_query($connect, $sql); 					// insert userid and password into user table
 		$connect->close();
+	//	echo "<p> SEAT INSERTED";
 	//	header("Location: signin.php");	// redirect to signin.php
 	}
 }
